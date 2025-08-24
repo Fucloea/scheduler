@@ -32,7 +32,7 @@ Configure the port as you wish.
 
 ## Usage
 
-Once the server is running, you can open the prebuilt API docs at the '/docs' endpoint in your browser.
+Once the server is running, you can open the prebuilt API docs at the '/docs' & '/redoc' endpoint in your browser.
 
 For example, if running locally;
 ```
@@ -40,13 +40,14 @@ http://localhost:8000/docs
 http://localhost:8000/redoc
 ```
 
+
 ## About the current code
 
-1. The POST /jobs endpoint takes in a unique job_name and any number of job_fields. No validation is done on the job_fields.
+1. The POST /jobs endpoint takes in a **unique job_name and any number of job_fields**. No validation is done on the job_fields.
 
-2. The job is scheduled using APScheduler, and saved to the database. 
+2. The job is **scheduled using APScheduler**, and saved to the database. 
 
-3. The scheduler picks up the job_fields are writes them to a log file with the same name as the job_name. This is to mimic the flow of the scheduler pushing data into a queue, if this were a full-fledged application.
+3. The scheduler picks up the job_fields and **writes them to a log file, in the intervals provided in the cron**, with the same name as the job_name. This is to mimic the flow of the scheduler pushing data into a queue, if this were a full-fledged application. 
 
 4. The GET /jobs endpoint returns all the active jobs from the job_store.
 
