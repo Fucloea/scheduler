@@ -1,0 +1,9 @@
+python-dotenv==1.0.0
+fastapi
+uvicorn
+celery
+sqlalchemy==2.0.23
+alembic==1.13.1 
+croniter
+apscheduler
+psycopg2-binary
