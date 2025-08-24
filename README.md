@@ -43,7 +43,7 @@ http://localhost:8000/redoc
 
 ## About the current code
 
-1. The POST /jobs endpoint takes in a **unique job_name and any number of job_fields**. No validation is done on the job_fields.
+1. The POST /jobs endpoint takes in a **unique job_name and any number of job_fields** along with a cron interval. You can use [this](https://crontab.guru) website to validate your cron pattern. No validation is done on the job_fields.
 
 2. The job is **scheduled using APScheduler**, and saved to the database. 
 
