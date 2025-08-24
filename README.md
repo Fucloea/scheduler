@@ -11,7 +11,7 @@ If you use a different environment manager, replace the conda commands with the 
 1. Create the conda environment and activate it:
 
 ```bash
-conda create -n scheduler python=3.12
+conda create -n scheduler python=3.10.18
 conda activate scheduler
 ```
 
@@ -55,4 +55,4 @@ http://localhost:8000/redoc
 
 ## Document regarding scalability 
 
-[Here's](<url>) the link to the google doc; regarding points to consider for scalability of this application.
+[Here's](https://docs.google.com/document/d/12cmXFbDGEcnQZcEt-r-GgceOR4M5bQgs3oZRzj-dzEs/edit?usp=sharing) the link to the google doc; regarding points to consider for scalability of this application.
